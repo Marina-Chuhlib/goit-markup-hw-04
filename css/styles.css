@@ -300,9 +300,6 @@ nav {
 .team-list:nth-child(4n) {
   margin-right: 0;
 }
-/* .team-img {
-  margin-bottom: 30px;
-} */
 
 .section.our-teem {
   background-color: var(--secondary-background-color);
@@ -330,6 +327,28 @@ nav {
 
 .profession {
   color: var(--primary-text-color);
+  margin-bottom: 16px;
+}
+.socials-list {
+  padding-left: 0;
+}
+.socials_lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.social-list-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: tomato;
+}
+
+.social-links {
+  width: 20px;
+  height: 20px;
 }
 
 /* Button */
@@ -463,9 +482,28 @@ nav {
   color: var(--primary-white-color);
 }
 .footer {
+  display: block;
+  display: flex;
   background-color: var(--accent-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-logo-adds,
+.footer-socials {
+  border: 2px solid tomato;
+}
+
+.footer-logo-adds {
+  margin-right: 70px;
+}
+
+.footer-socials {
+  padding-top: 12px;
 }
 
 .logo-footer {
@@ -473,10 +511,13 @@ nav {
   display: flex;
   padding-bottom: 20px;
   width: 145px;
+  margin-right: 70px;
 }
 
 address {
   font-style: normal;
+  width: 231px;
+  margin-right: 70px;
 }
 
 .adds {
@@ -501,4 +542,39 @@ address {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+}
+
+.footer-socials {
+  display: inline-block;
+}
+.socials-title {
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  padding: 20px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.socials-list {
+  display: block;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials-link {
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+
+.footer-socials-link {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
