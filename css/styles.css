@@ -381,6 +381,7 @@ nav {
   display: block;
   display: flex;
   gap: 30px;
+  padding-left: 0;
 }
 
 .clients-list-link {
