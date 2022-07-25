@@ -229,30 +229,20 @@ nav {
   margin-right: 0;
 }
 
-.features-list::before {
-  display: block;
-  content: '';
+.features-icons {
+  display: flex;
   height: 120px;
   background: #f5f4fa;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-.features-list:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
+
+  justify-content: center;
+  align-items: center;
 }
 
-.features-list:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-}
-
-.features-list:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-}
-.features-list:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
+.icon-features {
+  width: 70px;
+  height: 70px;
 }
 
 .features-title {
@@ -342,27 +332,43 @@ nav {
 
 .social-list-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: var(--primary-white-color);
 
   gap: 10px;
-
-  justify-content: center;
-  align-items: center;
 }
 
+.socials_lists {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+}
 .social-links {
   fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
 
-.social-list-link:hover {
+.socials_lists:hover .social-list-link,
+.socials_lists:focus .social-list-link {
   background-color: var(--accent-color);
 }
 
-.social-links:hover {
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-links {
+  fill: #ffffff;
+}
+
+.social-links:focus .social-links {
   fill: #ffffff;
 }
 
@@ -402,7 +408,16 @@ nav {
 .clients-item:hover,
 .clients-item:focus {
   border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 }
+
+.clients-list-link:hover .clients-icon,
+.clients-list-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+
 .clients-icon:hover,
 .clients-icon:focus {
   fill: var(--accent-color);
