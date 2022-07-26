@@ -360,16 +360,18 @@ nav {
   background-color: var(--accent-color);
 }
 
+.social-list-link:hover .social-links {
+  fill: var(--primary-white-color);
+}
+
+.social-links:hover,
+.social-links:focus {
+  fill: var(--primary-white-color);
+}
+
 .social-list-link:focus {
   background-color: var(--accent-color);
-}
-
-.social-list-link:hover .social-links {
-  fill: #ffffff;
-}
-
-.social-links:focus .social-links {
-  fill: #ffffff;
+  fill: var(--primary-white-color);
 }
 
 /* Clients */
@@ -405,17 +407,15 @@ nav {
   height: 60px;
   fill: #afb1b8;
 }
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-  width: 170px;
-  height: 92px;
-}
 
 .clients-list-link:hover .clients-icon,
 .clients-list-link:focus .clients-icon {
   fill: var(--accent-color);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .clients-icon:hover,
@@ -659,6 +659,7 @@ address {
   fill: var(--primary-white-color);
 }
 
-.footer-socials-link:hover {
+.footer-socials-link:hover,
+.footer-socials-link:focus {
   background-color: var(--accent-color);
 }
